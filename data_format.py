@@ -9,8 +9,8 @@ df_temp = ds_temp.to_dataframe().reset_index()
 df_preci = ds_preci.to_dataframe().reset_index()
 
 # Save as CSV
-df_temp.to_csv("artifacts\pune_weather_temperature.csv", index=False)
-df_preci.to_csv("artifacts\pune_weather_precipitation.csv", index=False)
+df_temp.to_csv("notebook\data\pune_weather_temperature.csv", index=False)
+df_preci.to_csv("notebook\data\pune_weather_precipitation.csv", index=False)
 
 print(df_temp.head())
 print(df_preci.head())
