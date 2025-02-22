@@ -29,7 +29,7 @@ else:
 if os.path.exists("notebook\data\_volumetric_soil_water_layer_1.csv"):
     print("Soil Water Layer 1 File already exists")
 else:
-    df_temp.to_csv("notebook\data\_volumetric_soil_water_layer_1.csv", index= False)
+    df_vol_soil_water_l1.to_csv("notebook\data\_volumetric_soil_water_layer_1.csv", index= False)
     print("Soil Water Layer 1 File created")
 
 if os.path.exists("notebook\data\precipitation.csv"):
@@ -41,24 +41,24 @@ else:
 if os.path.exists("notebook\data\sea_surface_temperature.csv"):
     print("Sea Surface Temperature File already exists")
 else:
-    df_preci.to_csv("notebook\data\sea_surface_temperature.csv", index=False)
+    df_sea_surface_temp.to_csv("notebook\data\sea_surface_temperature.csv", index=False)
     print("Sea Surface Temperature File created")
 
 if os.path.exists("notebook\data\soil_temperature_level_1.csv"):
     print("Soil Temperature Level 1 File already exists")
 else:
-    df_preci.to_csv("notebook\data\soil_temperature_level_1.csv", index=False)
+    df_soil_temp_l1.to_csv("notebook\data\soil_temperature_level_1.csv", index=False)
     print("Soil Temperature Level 1 File created")
 
 if os.path.exists("notebook\data\soil_type.csv"):
     print("Soil Type File already exists")
 else:
-    df_preci.to_csv("notebook\data\soil_type.csv", index=False)
+    df_soil_type.to_csv("notebook\data\soil_type.csv", index=False)
     print("Soil Type File created")
 
 if os.path.exists("notebook\data\surface_pressure.csv"):
     print("Surface Pressure File already exists")
 else:
-    df_preci.to_csv("notebook\data\surface_pressure.csv", index=False)
+    df_surface_pressure.to_csv("notebook\data\surface_pressure.csv", index=False)
     print("Surface Pressure File created")
 
