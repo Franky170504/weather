@@ -21,44 +21,44 @@ df_surface_pressure = ds_surface_pressure.to_dataframe().reset_index()
 
 # Save as CSV
 if os.path.exists("notebook\data\_temperature.csv"):
-    print("File already exists")
+    print("Tempreture File already exists")
 else:
     df_temp.to_csv("notebook\data\_temperature.csv", index= False)
-    print("File created")
+    print("Tempreture File created")
 
 if os.path.exists("notebook\data\_volumetric_soil_water_layer_1.csv"):
-    print("File already exists")
+    print("Soil Water Layer 1 File already exists")
 else:
     df_temp.to_csv("notebook\data\_volumetric_soil_water_layer_1.csv", index= False)
-    print("File created")
+    print("Soil Water Layer 1 File created")
 
 if os.path.exists("notebook\data\precipitation.csv"):
-    print("File already exists")
+    print("Precipitation File already exists")
 else:
     df_preci.to_csv("notebook\data\precipitation.csv", index=False)
-    print("File created")
+    print("Precipitation File created")
 
 if os.path.exists("notebook\data\sea_surface_temperature.csv"):
-    print("File already exists")
+    print("Sea Surface Temperature File already exists")
 else:
     df_preci.to_csv("notebook\data\sea_surface_temperature.csv", index=False)
-    print("File created")
+    print("Sea Surface Temperature File created")
 
 if os.path.exists("notebook\data\soil_temperature_level_1.csv"):
-    print("File already exists")
+    print("Soil Temperature Level 1 File already exists")
 else:
     df_preci.to_csv("notebook\data\soil_temperature_level_1.csv", index=False)
-    print("File created")
+    print("Soil Temperature Level 1 File created")
 
 if os.path.exists("notebook\data\soil_type.csv"):
-    print("File already exists")
+    print("Soil Type File already exists")
 else:
     df_preci.to_csv("notebook\data\soil_type.csv", index=False)
-    print("File created")
+    print("Soil Type File created")
 
 if os.path.exists("notebook\data\surface_pressure.csv"):
-    print("File already exists")
+    print("Surface Pressure File already exists")
 else:
     df_preci.to_csv("notebook\data\surface_pressure.csv", index=False)
-    print("File created")
+    print("Surface Pressure File created")
 
