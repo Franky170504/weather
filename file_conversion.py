@@ -2,7 +2,6 @@ import xarray as xr
 import os
 
 ds_temp = xr.open_dataset("weather-nc\_temperature.nc")
-ds_data = xr.open_dataset("weather-nc\data.nc")
 ds_vol_soil_water_l1 = xr.open_dataset("weather-nc\_volumetric_soil_water_layer_1.nc")
 ds_preci = xr.open_dataset("weather-nc\precipitation.nc")
 ds_sea_surface_temp = xr.open_dataset("weather-nc\sea_surface_temperature.nc")
@@ -12,7 +11,6 @@ ds_surface_pressure = xr.open_dataset("weather-nc\surface_pressure.nc")
 
 # Convert to Pandas DataFrame
 df_temp = ds_temp.to_dataframe().reset_index()
-df_data = ds_data.to_dataframe().reset_index()
 df_vol_soil_water_l1 = ds_vol_soil_water_l1.to_dataframe().reset_index()
 df_preci = ds_preci.to_dataframe().reset_index()
 df_sea_surface_temp = ds_sea_surface_temp.to_dataframe().reset_index()
@@ -22,7 +20,6 @@ df_surface_pressure = ds_surface_pressure.to_dataframe().reset_index()
 
 
 # Save as CSV
-df_data.to_csv("notebook\data\data.csv")
 if os.path.exists("notebook\data\_temperature.csv"):
     print("Tempreture File already exists")
 else:
