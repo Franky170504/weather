@@ -10,3 +10,4 @@ flask
 xarray
 cdsapi
 netCDF4
+lightgbm
