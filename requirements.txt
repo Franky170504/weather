@@ -9,3 +9,4 @@ xarray
 cdsapi
 netCDF4
 lstm
+tensorflow
