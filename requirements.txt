@@ -11,3 +11,4 @@ xarray
 cdsapi
 netCDF4
 lightgbm
+lstm
