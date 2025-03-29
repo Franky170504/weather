@@ -64,3 +64,4 @@ xarray==2024.7.0
 xgboost==2.1.4
 zipp 
 tensorflow
+statsmodels
